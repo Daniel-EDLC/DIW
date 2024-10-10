@@ -1,0 +1,160 @@
+#colores-fondos h2{
+    color: white;
+    background-color: blueviolet;
+}
+
+#colores-fondos p{
+    color: blue;
+    background-color: yellow;
+    opacity: 20%;
+}
+
+#tipografia h2{
+    font-family: Georgia;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 500%;
+}
+
+#tipografia h3{
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#tipografia p{
+    font-family: Impact;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+#espaciado h2{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#espaciado div{
+    text-align: justify;
+    padding-left: 30%;
+    padding-right: 20px;
+}
+
+#bordes-sombras h2{
+    border: dotted 2px blue;
+    border-radius: 10px;
+    box-shadow: 5px 10px grey;
+}
+
+#bordes-sombras div{
+    border: solid 2px purple;
+    border-radius: 10px;
+}
+
+#posicionamiento div{
+    background-color: aquamarine;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+#posicionamiento div footer{
+    background-color: aquamarine;
+    position: absolute;
+    margin-top: 110%;
+}
+
+#productos{
+    list-style-type: none;
+    list-style-image: url(https://img.icons8.com/?size=50&id=l9FdyDNSKC6d&format=png);
+    list-style-position: inside;
+}
+
+#botones button{
+    background-color: blueviolet;
+    color: darkgoldenrod;
+    border: 2px;
+    border-radius: 20px;
+    padding: 20px 30px 0px 15px;
+}
+
+#tablas table{
+    text-align: center;
+    border: 3px solid burlywood;
+    border-collapse: collapse;
+}
+
+#tablas table th{
+    border: 3px solid burlywood;
+    padding: 20px 10px 20px 10px;
+}
+
+#tablas table td{
+    border: 3px solid burlywood;
+    padding: 10px 10px 10px 10px;
+}
+
+#contenedor h2{
+    margin: 0px 0px 5px 20%;
+    padding: 0px 0px 20px 0px;
+}
+
+#contenedor p{
+    margin: 0px 0px 5px 25%;
+    padding: 10px 0px 10px 0px;
+}
+
+#contenedor ul{
+    margin: 0px 0px 5px 30%;
+    padding: 20px 0px 0px 0px;
+}
+
+#imagenes img{
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#nombre{
+    border: 1px solid palevioletred;
+    font-size: 16px;
+    margin: 0% 0% 0% 3%;
+}
+
+#comentarios{
+    border: 1px solid palevioletred;
+    font-size: 20px;
+    padding: 0% 0% 0% 15%;
+    margin: 0% 0% 0% 1%;
+}
+
+#enlaces ul li a{
+    color: chartreuse;
+    text-decoration: line-through;
+}
+
+#enlaces ul li a:hover{
+    color: aqua;
+    text-decoration: overline;
+}
+
+#efectos-texto h2{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-shadow: 2px 3px gray;
+}
+
+#efectos-texto h3{
+    text-transform: lowercase;
+    letter-spacing: 4px;
+    text-shadow: 1px 2px gray;
+}
+
+#efectos-texto p{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-shadow: 2px 3px gray;
+}
+
+#contenedor{
+    display: inline-block;
+}
