@@ -1,0 +1,103 @@
+/*----------------------------------------------------Distribución 1---------------------------------------------------------*/
+/*.contenedor_flex{
+    background-color: lightgrey;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-flow: row;
+    gap: 8px;
+    align-items: end;
+    justify-content: center;
+}
+
+.flex-item{
+    background-color: cornflowerblue;
+    height: 50px;
+}*/
+
+/*----------------------------------------------------Distribución 2---------------------------------------------------------*/
+/*.contenedor_flex{
+    background-color: lightgrey;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-flow: row;
+    gap: 8px;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.flex-item{
+    background-color: cornflowerblue;
+    height: 50px;
+}*/
+
+/*----------------------------------------------------Distribución 3---------------------------------------------------------*/
+/*.contenedor_flex{
+    background-color: lightgrey;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    gap: 8px;
+    flex-flow: column-reverse;
+    justify-content: start;
+}
+
+.flex-item{
+    background-color: cornflowerblue;
+    height: 50px;
+}*/
+
+/*----------------------------------------------------Distribución 4---------------------------------------------------------*/
+/*.contenedor_flex{
+    background-color: lightgrey;
+    display: flex;
+    height: 500px;
+    width: 500px;
+    gap: 12px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.flex-item{
+    background-color: cornflowerblue;
+}*/
+
+/*----------------------------------------------------Distribución 5---------------------------------------------------------*/
+/*.contenedor_flex{
+    background-color: lightgrey;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+
+.flex-item{
+    background-color: cornflowerblue;
+    height: 50px;
+}
+
+.flex-item:hover{
+    background-color: blueviolet;
+    transition: 1s;
+    flex-grow: 2;
+}*/
+
+/*----------------------------------------------------Distribución 6---------------------------------------------------------*/
+/*.contenedor_flex{
+    background-color: lightgrey;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    gap: 0px 8px;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.flex-item{
+    background-color: cornflowerblue;
+    height: 50px;
+}*/
