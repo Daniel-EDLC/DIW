@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "area1 area1 area1"
+    "area2 area3 area4"
+    "area2 area5 area6";
+    width: 300px;
+    height: 300px;
+}
+
+.celda1{
+    background-color: blue;
+    grid-area: area1;
+    /* grid-column: 2/ span 3; */
+}
+
+.celda2{
+    background-color: yellow;
+}
+
+.celda3{
+    background-color: red;
+    grid-area: area2;
+}
+
+.celda4{
+    background-color: green;
+}
+
+.celda5{
+    background-color: purple;
+}
+
+.celda6{
+    background-color: pink;
+}
