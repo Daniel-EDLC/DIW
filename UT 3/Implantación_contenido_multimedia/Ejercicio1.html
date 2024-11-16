@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <figure>
+        <img src="./imagenes/Ejercicio1/mostruo1.jpg" width="600px" class="general">
+        <figcaption>Imagen 800x600</figcaption>
+    </figure>
+    <picture>
+        <source srcset="./imagenes/Ejercicio1/mostruo2.webp" type="image/webp">
+        <source srcset="./imagenes/Ejercicio1/mostruo2.png" type="image/png">
+        <img src="./imagenes/Ejercicio1/mostruo2.jpg" alt="" width="600px">
+        <h3>Revisa el formato de la imagen</h3>
+    </picture>
+    <picture>
+        <source srcset="./imagenes/Ejercicio1/mostruo3_pequeña.jpg" media="(max-width: 350px)"/>
+        <source srcset="./imagenes/Ejercicio1/mostruo3_mediana.jpg" media="(max-width: 1024px)"/>
+        <source srcset="./imagenes/Ejercicio1/mostruo3.jpg" media="(min-width: 1024px)"/>
+        <img src="./imagenes/Ejercicio1/mostruo3.jpg"/>
+    </picture>
+</body>
+</html>
