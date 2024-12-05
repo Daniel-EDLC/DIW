@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <form action="#" class="form">
+        <div class="linea">
+            <label>Nombre</label>
+            <input type="text" placeholder="Escribe tu usuario" pattern="[A-Z]{1}[a-z]+">
+        </div>
+        <div class="linea">
+            <label>Password</label>
+            <input type="password" placeholder="titular de la consulta">
+        </div>
+        <div class="linea">
+            <label>Email</label>
+            <input type="email" placeholder="email">
+        </div>
+        <div class="linea">
+            <label>Teléfono</label>
+            <input type="tel" placeholder="+34 666 777 888">
+        </div>
+        <div class="linea">
+            <label>URL</label>
+            <input type="url" placeholder="http://dominio.com">
+        </div>
+        <div class="linea">
+            <label>Edad</label>
+            <input type="number" max="100" min="18">
+        </div>
+        <div class="linea">
+            <label>Fecha de nacimiento</label>
+            <input type="date">
+        </div>
+        <div class="textarea">
+            <label>Mensaje</label>
+            <textarea maxlength="300" placeholder="describe brevemente en menos de 300 caracteres"></textarea>
+        </div>
+        <input type="submit" value="Enviar datos" class="boton">
+    </form>
+</body>
+</html>
