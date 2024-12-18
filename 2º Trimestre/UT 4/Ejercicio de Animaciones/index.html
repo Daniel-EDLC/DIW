@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="contenedor2">
+        <div class="texto" style="--j:0;">
+            <span style="--i:4;">3</span>
+            <span style="--i:5;">0</span>
+            <span style="--i:6;">3</span>
+            <span style="--i:7;">0</span>
+        </div>
+        <div class="texto" style="--j:1;">
+            <span style="--i:4;">1</span>
+            <span style="--i:5;">2</span>
+            <span style="--i:6;">3</span>
+            <span style="--i:7;">1</span>
+        </div>
+        <div class="texto" style="--j:2;">
+            <span style="--i:4;">/</span>
+            <span style="--i:5;">/</span>
+            <span style="--i:6;">/</span>
+            <span style="--i:7;">/</span>
+        </div>
+        <div class="texto" style="--j:3;">
+            <span style="--i:4;">1</span>
+            <span style="--i:5;">0</span>
+            <span style="--i:6;">1</span>
+            <span style="--i:7;">0</span>
+        </div>
+        <div class="texto" style="--j:4;">
+            <span style="--i:4;">2</span>
+            <span style="--i:5;">1</span>
+            <span style="--i:6;">2</span>
+            <span style="--i:7;">1</span>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="texto" style="--j:0;">
+            <span style="--i:0;">2</span>
+            <span style="--i:1;">3</span>
+            <span style="--i:2;">4</span>
+            <span style="--i:3;">2</span>
+        </div>
+        <div class="texto" style="--j:1;">
+            <span style="--i:0;">0</span>
+            <span style="--i:1;">1</span>
+            <span style="--i:2;">2</span>
+            <span style="--i:3;">0</span>
+        </div>
+        <div class="texto" style="--j:2;">
+            <span style="--i:0;">2</span>
+            <span style="--i:1;">3</span>
+            <span style="--i:2;">4</span>
+            <span style="--i:3;">2</span>
+        </div>
+        <div class="texto" style="--j:3;">
+            <span style="--i:0;">4</span>
+            <span style="--i:1;">5</span>
+            <span style="--i:2;">4</span>
+            <span style="--i:3;">5</span>
+        </div>
+    </div>
+    <h2>Feliz Año</h2>
+    <script>
+        let h2 = document.querySelector("h2");
+        let contenedor = document.querySelector(".contenedor");
+        let contenedor2 = document.querySelector(".contenedor2");
+        let Contenedor1CarasFrente = document.querySelectorAll(".contenedor .texto span");
+        let Contenedor1CarasLaterales = document.querySelectorAll(".contenedor .texto");
+        let Contenedor2CarasFrente = document.querySelectorAll(".contenedor2 .texto span");
+        let Contenedor2CarasLaterales = document.querySelectorAll(".contenedor2 .texto");
+
+        h2.onclick = function(){
+            contenedor.classList.toggle("newyear");
+            contenedor2.classList.toggle("newyear");
+            this.classList.toggle("active");
+            Contenedor1CarasFrente.forEach(texto =>{
+                texto.classList.toggle("activo");
+            });
+            Contenedor1CarasLaterales.forEach(texto =>{
+                texto.classList.toggle("activo");
+            });
+            Contenedor2CarasFrente.forEach(texto =>{
+                texto.classList.toggle("activo");
+            });
+            Contenedor2CarasLaterales.forEach(texto =>{
+                texto.classList.toggle("activo");
+            });
+        }
+    </script>
+</body>
+</html>

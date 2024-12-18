@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #3d3d3d;
+    background-image: url("./fondo.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor, .contenedor2{
+    position: relative;
+    display: flex;
+    transform-style: preserve-3d;
+    gap: 10px;
+    transform: rotateY(30deg) rotateX(10deg);
+}
+
+.texto{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transition: 2.5s ease-in-out;
+    transition-delay: calc(0.80s * var(--j));
+}
+
+/* Rotacion de los cubos del año */
+.contenedor.newyear .texto{
+    transform: rotateX(calc(-1350deg * 1)) rotateY(calc(1440deg * 1));
+}
+
+/* Rotacion del ultimo cubo del año */
+.contenedor.newyear .texto:last-child{
+    transform: rotateX(calc(-1350deg * 1)) rotateY(calc(1440deg * 1));
+}
+
+/* Rotacion de los cubos de dia y mes */
+.contenedor2.newyear .texto{
+    transform: rotateX(calc(-1350deg * 1)) rotateY(calc(1440deg * 1));
+}
+
+/* Estilos de las caras de enfrente de todos los cubos */
+.texto span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 4em;
+    cursor: default;
+    background: linear-gradient(#434343, #535353);
+    transform-style: preserve-3d;
+    transform: rotateX(calc(90deg * var(--i))) translateZ(50px);
+}
+
+span.activo{
+    animation: colorear 5.6s linear;
+    background: linear-gradient(#e53939, #eb6c6c);
+}
+
+.texto.activo::after{
+    animation: colorear 5.6s linear;
+    background: linear-gradient(#e53939, #eb6c6c);
+}
+
+.texto.activo::before{
+    animation: colorear 5.6s linear;
+    background: #a22626;
+}
+
+.texto.activo:last-child{
+    background: linear-gradient(#29c040, #32ed4e);
+}
+
+/* Estilo de la cara de la izquierda de los cubos */
+.texto::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #373737;
+    transform-origin: left;
+    transform: rotateY(90deg) rotateZ(-90deg) translate(-50px);
+}
+
+/* Estilo de la cara de la derecha de los cubos */
+.texto span::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #373737;
+    transform-origin: right;
+    transform: rotateY(90deg) translateX(100px);
+}
+
+/* Color de las caras de enfrente del ultimo cubo del año */
+.contenedor .texto:last-child span{
+    background: linear-gradient(#29c040, #32ed4e);
+}
+
+/* Color de la cara del lateral del ultimo cubo del año */
+.contenedor .texto:last-child::before{
+    background: #11a728;
+}
+
+h2{
+    position: absolute;
+    bottom: 50px;
+    color: #252525;
+    font-size: 2em;
+    transition: .5s;
+    cursor: pointer;
+}
+
+/* clase que se cambia al hacer click en la frase */
+h2.active{
+    color: #fff;
+    text-shadow: 0 0 20px #fff, 0 0 50px #fff;
+}
+
+/* Texto del año antes de la animación */
+h2::after{
+    content: ' 2024';
+    transition: .5s;
+}
+
+/* Texto del año después de la animación */
+h2.active::after{
+    content: ' 2025';
+    color: #32ed4e;
+    text-shadow: 0 0 50px #32ed4e;
+}
+
+@keyframes colorear {
+    0% {
+        background: #434343;
+    }
+    20% {
+        background: #453e3e;
+    }
+    40% {
+        background: #5c4141;
+    }
+    60% {
+        background: #834444;
+    }
+    80% {
+        background: #9d3f3f;
+    }
+    100% {
+        background: #e53939;
+    }
+}
