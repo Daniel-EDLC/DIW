@@ -1,0 +1,43 @@
+.cuadrado{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    font-size: 2rem;
+    color: white;
+}
+
+.boton1:hover+.cuadrado{
+    transform-origin: center center;
+    transform: translateX(400px) translateY(200px);
+    transition: all 2s ease-in;
+}
+
+.boton2:hover+.cuadrado{
+    margin-left: 400px;
+    transform-origin: center center;
+    transform: scaleX(3.5);
+    transition: all 5s ease-out;
+}
+
+.boton3:hover+.cuadrado{
+    transform-origin: center center;
+    transform: rotateX(-45deg) rotateY(15deg);
+    transition: all 0.3s ease-in-out;
+}
+
+/* .boton3:hover.cuadrado{
+    transform-origin: center center;
+    transform: rotateX(45deg) rotateY(-20deg) rotateZ(40deg);
+} */
+
+.boton4:hover+.cuadrado{
+    transform-origin: center center;
+    transform: rotateZ(180deg);
+    transition: all 20s;
+}
+
+.boton5:hover+.cuadrado{
+    transform-origin: center center;
+    transform: rotate(45deg) scale(1.2) translateX(400px) translateY(-600px);
+    transition: all 1s ease 0.5s;
+}
